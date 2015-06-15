@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'avenirlt35light';
+    src: url('../fonts/avenirlt35light.eot');
+    src: url('../fonts/avenirlt35light.eot') format('embedded-opentype'),
+         url('../fonts/avenirlt35light.woff2') format('woff2'),
+         url('../fonts/avenirlt35light.woff') format('woff'),
+         url('../fonts/avenirlt35light.ttf') format('truetype'),
+         url('../fonts/avenirlt35light.svg#avenirlt35light') format('svg');
+}
+@font-face {
+    font-family: 'Avenir95Black';
+    src: url('../fonts/Avenir95Black.eot');
+    src: url('../fonts/Avenir95Black.eot') format('embedded-opentype'),
+         url('../fonts/Avenir95Black.woff2') format('woff2'),
+         url('../fonts/Avenir95Black.woff') format('woff'),
+         url('../fonts/Avenir95Black.ttf') format('truetype'),
+         url('../fonts/Avenir95Black.svg#Avenir95Black') format('svg');
+}
+
+@font-face {
+    font-family: 'avenirltstdheavywebfont';
+    src: url('../fonts/avenirltstdheavywebfont.eot');
+    src: url('../fonts/avenirltstdheavywebfont.eot') format('embedded-opentype'),
+         url('../fonts/avenirltstdheavywebfont.woff2') format('woff2'),
+         url('../fonts/avenirltstdheavywebfont.woff') format('woff'),
+         url('../fonts/avenirltstdheavywebfont.ttf') format('truetype'),
+         url('../fonts/avenirltstdheavywebfont.svg#avenirltstdheavywebfont') format('svg');
+}
+
+$content: 'avenirlt35light';
+$boldcontent: 'Avenir95Black';
+$heavy: 'avenirltstdheavywebfont';
+$gray: #a7a8a9;
+$nblue: #1d1e93;
+$white: #fff;
+$gray_bg: #a7a8a9;
+
+@mixin transition($val) {
+	-webkit-transition: $val;
+    -moz-transition:    $val;
+    transition:         $val;
+}
+@mixin box-shadow($val) {
+	-webkit-box-shadow: $val;
+  -moz-box-shadow:    $val;
+  box-shadow:         $val;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+	border: 0px;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $content;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight:normal;
+  color: $gray;
+  -webkit-text-size-adjust: 100%;
+
+}
+#wrapper {
+	min-height: 100%;
+	position:relative;
+	background: $white;	
+}
+
+.container{
+	max-width: 1288px;
+	margin: 0 auto;
+}
+    
+
+.banner {
+    width:100%;
+    max-height:683px;
+    font-family: $boldcontent;
+    position:relative;
+        .banner_content {
+            width:46.1876%;
+            margin:auto;
+            color:$white;
+            font-size:20px;
+            line-height:24px;
+            margin-bottom:13.177%;
+            padding-bottom:13.177%;
+                .logo {
+                    display:inline-block;
+                    margin:9.8% 0 10% 0;
+                    }
+                .banner_title {
+                    font-size:86px;
+                    line-height:86px;
+                    display:inline-block;
+                    }
+                }
+    }
+    
+.top_block {
+    width:344px;
+    position:absolute;
+    top:0px;
+    right:0px;
+        .pdf-down{
+            width:83px;
+            height:96px;
+            padding-top:46px;
+            background:url(../images/pdf_down_icon.png) center 5px no-repeat;
+            font-size:10px;
+            font-family:$heavy;
+            text-transform:uppercase;
+            float:right;
+            color:#fff;
+            text-decoration:none;
+            text-align:center;
+            line-height:12px;
+            background-color:$gray_bg;
+            @include transition(all 0.2s ease-in-out 0s);
+                &:hover{
+                    color:#e40003;
+                    }
+            }
+        .menu_icon {
+            width:83px;
+            height:96px;
+            padding:57px 11px 11px 11px;
+            line-height:14px;
+            text-align:center;
+            text-transform:uppercase;
+            font-size:10px;
+            background:url(../images/menu_icon.png) center 12px no-repeat;
+            background-color:$gray_bg;
+            float:right;
+            margin-right:19px;
+            color:#fff;
+            cursor:pointer;
+            display:inline-block;
+            float:right;
+            }
+        .dropbox {
+            width:100%;
+            position:absolute;
+            top:96px;
+            left:0px;
+            display:none;
+                .nav {
+                    width:100%;
+                    float:left;
+                    padding:23px 18px;
+                    background-color: $white;
+                    }
+            }
+        
+    }
