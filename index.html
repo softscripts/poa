@@ -5,6 +5,8 @@
 <head>
 	<title>Port of Amsterdam</title>
 	<meta charset="utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
@@ -13,7 +15,7 @@
 	$(document).ready(function(){
 	
 	  $(".menu_icon").click(function(){
-	    $(".dropblock").toggleClass("show");
+	    $(".dropblock").slideToggle("slow");
 	  });
 	  
 	});
@@ -23,7 +25,8 @@
 
 
 <body>
-<div class="wrapper">
+<div class="wrapper clearfix">
+    <section id="home">
 	    <div class="banner clearfix" style="background:url(images/banner.jpg) no-repeat center fixed">
 	         <div class="banner_content">
 	             <div class="logo"><img src="images/logo.png"></div>
@@ -36,13 +39,65 @@
 	         <div class="top_block">
 	             <a href="#" class="pdf-down">DOWNLOAD JAARVERSLAG ALS PDF</a>
 	             <div class="menu_icon">Menu</div>
-	             <div class="dropbox">
-	                 <div class="nav"></div>
+	             <div class="dropblock">
+	                 <div class="graymenubox"></div>
+	                 <div class="nav">
+	                     <ul>
+	                         <li><a href="#">Profiel Havenbedrijf Amsterdam</a></li>
+	                         <li><a href="#">Voorwoord</a></li>
+	                         <li><a href="#">Visie</a></li>
+	                         <li><a href="#">De Markt</a></li>
+	                         <li><a href="#">De Havenregio</a></li>
+	                         <li><a href="#">Divisie havenmeester</a></li>
+	                         <li><a href="#">Ons bedrijf</a></li>
+	                         <li class="out-link"><a href="#">Hoogtepunten</a></li>
+	                         <li class="out-link"><a href="#">Cijfers</a></li>
+	                         <li class="out-link"><a href="#">Overzicht</a></li>
+	                     </ul>
+	                 </div>
 	             </div>
 	         </div>
-
+             
 	    </div>
-
+	    <a href="#" class="down_arr"><img src="images/dn_arr_wht.png"></a>
+	</section>
+	    <div class="h_line clearfix"></div>
+	
+	<section>
+	    <div class="container clearfix">
+	        <div class="profile_block">
+	            <div class="column">
+	                <h3 class="red_border">PROFIEL HAVENBEDRIJF AMSTERDAM</h3>
+	                <h2>
+	                    Als <span class="red">vierde haven van West-Europa </span> draagt Amsterdam seen belangrijke 
+	                    verantwoordelijkheid in de bevoorrading van het nationale en Europese achterland.
+	                </h2>
+	                <div class="red_border_long red_border"></div>
+	                   
+	            </div>
+	            <div class="column">
+	                <div class="profile_pic"><img src="images/profile_pic.jpg"></div>
+	            </div>
+	        </div>
+	    </div>
+	    <a href="#" class="down_arr"><img src="images/dn_arr_red.png"></a>
+    </section>
+    <section>
+        <div class="container">
+            <div class="column">
+                <h3 class="blue_border">VOORWOORD</h3>
+                <h2>
+                    In de Amsterdamse havenregio vestigden onze klanten opnieuw een <span class="blue">overslagrecord</span>: +2,0% tot 97,7 miljoen ton.
+                </h2>
+                <div class="blue_border_long blue_border"></div>
+                <div class="slim_block">
+                    <div class="slim_object"><img src="images/slim_object.jpg"></div>
+                </div>
+            </div>
+            <div class="column"></div>
+        </div>
+        <a href="#" class="down_arr"><img src="images/dn_arr_blue.png"></a>
+    </section>
 </div>
 </body>
 
