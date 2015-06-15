@@ -74,6 +74,9 @@ section {
       line-height: 86px;
       display: inline-block; }
 
+.banner {
+  background-size: cover !important; }
+
 .top_block {
   width: 344px;
   position: absolute;
@@ -235,7 +238,56 @@ h3 {
   width: 282px;
   margin-left: 115px;
   float: left;
-  margin-top: -4px; }
+  margin-top: -4px;
+  background: url(../images/slim_object.png) no-repeat top; }
   .slim_block .slim_object {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    float: left; }
+  .slim_block .milton_blk {
+    margin-top: -9px;
+    float: left;
+    width: 100%;
+    height: 138px;
+    padding: 172px 0 93px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 83px;
+    font-family: "Avenir95Black";
+    letter-spacing: -5px; }
+    .slim_block .milton_blk span {
+      font-size: 31px;
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 30px;
+      letter-spacing: 5px; }
+  .slim_block h2 {
+    font-size: 24px;
+    color: #31b8e4;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 11px 0 0 0;
+    width: 100%;
+    padding: 0px; }
+
+.gray_blue_block {
+  width: 100%;
+  float: left;
+  background: url(../images/gray-blue.png) no-repeat left top;
+  padding: 40px;
+  position: relative; }
+  .gray_blue_block .icon {
+    padding: 40px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+  .gray_blue_block .left_column {
+    width: 37.51%;
+    float: left;
+    margin-top: 180px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Avenir95Black";
+    color: #31b8e4;
+    line-height: 28px; }
