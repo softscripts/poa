@@ -10,6 +10,10 @@
   font-family: 'avenirltstdheavywebfont';
   src: url("../fonts/avenirltstdheavywebfont.eot");
   src: url("../fonts/avenirltstdheavywebfont.eot") format("embedded-opentype"), url("../fonts/avenirltstdheavywebfont.woff2") format("woff2"), url("../fonts/avenirltstdheavywebfont.woff") format("woff"), url("../fonts/avenirltstdheavywebfont.ttf") format("truetype"), url("../fonts/avenirltstdheavywebfont.svg#avenirltstdheavywebfont") format("svg"); }
+@font-face {
+  font-family: 'AvenirLTStdRoman';
+  src: url("../fonts/AvenirLTStdRoman.eot");
+  src: url("../fonts/AvenirLTStdRoman.eot") format("embedded-opentype"), url("../fonts/AvenirLTStdRoman.woff2") format("woff2"), url("../fonts/AvenirLTStdRoman.woff") format("woff"), url("../fonts/AvenirLTStdRoman.ttf") format("truetype"), url("../fonts/AvenirLTStdRoman.svg#AvenirLTStdRoman") format("svg"); }
 *, *:before, *:after {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -26,7 +30,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "avenirlt35light";
+  font-family: "AvenirLTStdRoman";
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -57,22 +61,30 @@ section {
   max-height: 683px;
   font-family: "Avenir95Black";
   position: relative;
-  padding-bottom: 16%; }
+  padding-bottom: 16%;
+  text-align: center; }
+  .banner .logo {
+    display: inline-block;
+    margin: 50px 0 50px 0; }
   .banner .banner_content {
-    width: 46.1876%;
-    margin: auto;
+    width: 61%;
+    margin-left: 27%;
+    text-align: left;
     color: #fff;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 25px;
     /*margin-bottom:13.177%;
     padding-bottom:13.177%;*/ }
-    .banner .banner_content .logo {
-      display: inline-block;
-      margin: 9.8% 0 10% 0; }
     .banner .banner_content .banner_title {
       font-size: 86px;
       line-height: 86px;
+      margin-bottom: 10px;
       display: inline-block; }
+    .banner .banner_content p {
+      font-family: "AvenirLTStdRoman"; }
+    .banner .banner_content a {
+      text-decoration: underline;
+      color: #fff; }
 
 .banner {
   background-size: cover !important; }
@@ -152,7 +164,8 @@ section {
           line-height: 34px;
           font-size: 20px;
           font-family: "Avenir95Black";
-          list-style: none; }
+          list-style: none;
+          text-align: left; }
           .top_block .dropblock .nav ul li a {
             color: #a7a8a9;
             text-decoration: none;
@@ -177,6 +190,12 @@ section {
   width: 100%;
   padding-bottom: 20px;
   float: left; }
+  .profile_block .left-side {
+    width: 70%;
+    float: left; }
+  .profile_block .right-side {
+    width: 30%;
+    float: left; }
 
 h2 {
   font-family: "Avenir95Black";
@@ -209,10 +228,16 @@ h3 {
   border-bottom: solid 4px #1d1e93; }
 
 .red_border_long {
-  width: 45.36%; }
+  width: 300px; }
+
+.red_border_short {
+  width: 85px; }
 
 .blue_border_long {
-  width: 17.82%; }
+  width: 115px; }
+
+.nblue_border_long {
+  width: 40px; }
 
 .red {
   color: #e40003; }
@@ -222,6 +247,9 @@ h3 {
 
 .nblue {
   color: #1d1e93; }
+
+.white {
+  color: #fff; }
 
 .column {
   width: 50%;
@@ -283,11 +311,62 @@ h3 {
     left: 0px;
     top: 0px; }
   .gray_blue_block .left_column {
-    width: 37.51%;
+    width: 50%;
     float: left;
-    margin-top: 180px;
-    text-align: center;
     font-size: 24px;
     font-family: "Avenir95Black";
     color: #31b8e4;
-    line-height: 28px; }
+    line-height: 28px;
+    margin-top: 160px;
+    padding-top: 20px;
+    background: url(../images/wht_line.jpg) top center no-repeat;
+    text-align: center; }
+  .gray_blue_block .right_column {
+    width: 45%;
+    float: right;
+    max-height: 413px; }
+    .gray_blue_block .right_column ul {
+      padding: 0px;
+      margin: 0px; }
+      .gray_blue_block .right_column ul li {
+        list-style: none;
+        width: 100%;
+        float: left;
+        display: inline-block;
+        margin-bottom: 36px;
+        color: #31b8e4;
+        font-weight: normal;
+        font-size: 16px; }
+        .gray_blue_block .right_column ul li a {
+          color: #fff;
+          text-decoration: none; }
+          .gray_blue_block .right_column ul li a:hover {
+            text-decoration: underline; }
+
+.partnership {
+  width: 48%;
+  padding-right: 2%; }
+  .partnership .partnership_left_pic {
+    width: 100%;
+    float: left; }
+  .partnership .partnership_left_content {
+    width: 48%;
+    float: left; }
+    .partnership .partnership_left_content:last-child {
+      float: right; }
+
+.partnership_right_content {
+  width: 100%;
+  margin-top: 16px; }
+
+.market_content {
+  font-size: 20px;
+  line-height: 24px;
+  width: 80%;
+  float: left;
+  margin-top: 20px; }
+
+.market h2 {
+  margin-bottom: 0px; }
+
+/*# sourceMappingURL=style.css.map */
