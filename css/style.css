@@ -174,6 +174,11 @@ section {
             transition: all 0.2s ease-in-out 0s; }
             .top_block .dropblock .nav ul li a:hover {
               color: #31b8e4; }
+    .top_block .dropblock .nblue-box {
+      width: 95%;
+      height: 20px;
+      background-color: #1d1e93;
+      float: right; }
 
 .down_arr {
   position: absolute;
@@ -189,13 +194,49 @@ section {
 .profile_block {
   width: 100%;
   padding-bottom: 20px;
+  float: left;
+  	/*.left-side{
+  		width:70%;	
+  		float:left;
+  	}
+  	.right-side {
+  		width:30%;
+  		float:left;
+      } */ }
+
+.hightlights {
+  width: 100%;
+  padding-bottom: 20px;
   float: left; }
-  .profile_block .left-side {
-    width: 70%;
-    float: left; }
-  .profile_block .right-side {
-    width: 30%;
-    float: left; }
+  .hightlights .hightlights_block {
+    width: 100%;
+    float: left;
+    margin-bottom: 58px; }
+    .hightlights .hightlights_block .left-side {
+      width: 70.3875%;
+      float: left; }
+    .hightlights .hightlights_block .right-side {
+      width: 24.57%;
+      float: right;
+      margin-top: 193px; }
+      .hightlights .hightlights_block .right-side p {
+        margin: 0px; }
+  .hightlights .text-content {
+    width: 47.36%;
+    float: left;
+    margin-right: 30px; }
+
+.sea_lock {
+  width: 100%;
+  float: left;
+  margin-top: 43px; }
+  .sea_lock .sea_lock_left {
+    width: 24%;
+    float: left;
+    margin-top: 170px; }
+  .sea_lock .sea_lock_right {
+    width: 74%;
+    float: right; }
 
 h2 {
   font-family: "Avenir95Black";
@@ -217,6 +258,14 @@ h3 {
   font-weight: normal;
   text-transform: uppercase;
   float: left; }
+
+h4 {
+  font-family: "Avenir95Black";
+  color: #1d1e93;
+  font-size: 16px;
+  margin: 0px;
+  line-height: 24px;
+  font-weight: normal; }
 
 .red_border {
   border-bottom: solid 4px #e40003; }
@@ -251,6 +300,9 @@ h3 {
 .white {
   color: #fff; }
 
+strong {
+  font-family: "Avenir95Black"; }
+
 .column {
   width: 50%;
   float: left; }
@@ -263,11 +315,12 @@ h3 {
   margin: 15px 0 0 8px; }
 
 .slim_block {
-  width: 282px;
-  margin-left: 115px;
+  width: 100%;
+  /*margin-left:115px;*/
+  text-align: center;
   float: left;
   margin-top: -4px;
-  background: url(../images/slim_object.png) no-repeat top; }
+  /*background:url(../images/slim_object.png) no-repeat top;*/ }
   .slim_block .slim_object {
     width: 100%;
     text-align: center;
@@ -305,7 +358,7 @@ h3 {
   padding: 40px;
   position: relative; }
   .gray_blue_block .icon {
-    padding: 40px;
+    padding: 0 26px 22px 0;
     background-color: #fff;
     position: absolute;
     left: 0px;
@@ -351,22 +404,164 @@ h3 {
     float: left; }
   .partnership .partnership_left_content {
     width: 48%;
-    float: left; }
+    float: left;
+    margin-top: 120px; }
     .partnership .partnership_left_content:last-child {
       float: right; }
 
 .partnership_right_content {
-  width: 100%;
-  margin-top: 16px; }
+  width: 48%;
+  float: left;
+  margin-top: 95px; }
+  .partnership_right_content:last-child {
+    float: right; }
 
 .market_content {
   font-size: 20px;
   line-height: 24px;
   width: 80%;
   float: left;
-  margin-top: 20px; }
+  margin: 20px 0 37px 0; }
 
 .market h2 {
   margin-bottom: 0px; }
 
-/*# sourceMappingURL=style.css.map */
+.coal_block {
+  width: 69.65%;
+  float: left;
+  margin: 270px 0 32px 164px; }
+  .coal_block .coal_content {
+    width: 29%;
+    float: left;
+    margin: 107px 20px 0 15px; }
+  .coal_block .coal_pic {
+    float: right; }
+
+.chemical_block {
+  width: 100%;
+  float: left;
+  margin-top: 16px; }
+  .chemical_block .chemical_left {
+    width: 48.6%;
+    float: left; }
+    .chemical_block .chemical_left .chemical_pic {
+      width: 78.98%;
+      float: left;
+      margin: 139px 0 18px 27px; }
+    .chemical_block .chemical_left .chemical_pic_content {
+      width: 78.98%;
+      float: left;
+      margin-left: 27px; }
+    .chemical_block .chemical_left .biomass {
+      width: 100%;
+      float: left;
+      padding: 20px 20px 70px 20px;
+      margin-top: 70px;
+      background-color: rgba(227, 227, 227, 0.6); }
+    .chemical_block .chemical_left .agribulk {
+      width: 56.36%;
+      float: right;
+      color: #fff;
+      padding: 20px 15px 15px 15px;
+      margin: -6px -6px 0 0;
+      z-index: 100;
+      position: relative;
+      background-color: rgba(100, 100, 101, 0.6); }
+  .chemical_block .chemical_right {
+    width: 51.39%;
+    float: right; }
+    .chemical_block .chemical_right .cargo_content {
+      width: 50%;
+      float: right;
+      padding: 20px;
+      background-color: rgba(227, 227, 227, 0.6); }
+    .chemical_block .chemical_right .dutch_network {
+      width: 100%;
+      padding: 20px 20px 40px 20px;
+      color: #fff;
+      float: left;
+      margin: -6px -10px 0 0;
+      z-index: 100;
+      position: relative;
+      background-color: rgba(100, 100, 101, 0.6); }
+    .chemical_block .chemical_right .mineral {
+      width: 98%;
+      padding: 20px 20px 40px 20px;
+      color: #fff;
+      float: left;
+      z-index: 100;
+      position: relative;
+      margin: -4px 0px 0 -4px;
+      background-color: rgba(100, 100, 101, 0.6); }
+    .chemical_block .chemical_right .biofuel {
+      width: 52%;
+      float: left;
+      margin: -12px 0 0 -8px;
+      background-color: rgba(100, 100, 101, 0.6);
+      color: #fff;
+      z-index: 100;
+      position: relative;
+      padding: 20px 20px 30px 20px; }
+    .chemical_block .chemical_right .vessels {
+      width: 100%;
+      padding: 20px;
+      float: left;
+      margin-top: -6px;
+      background-color: rgba(227, 227, 227, 0.6); }
+      .chemical_block .chemical_right .vessels .vessels_pic {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px; }
+
+.gasoline {
+  width: 26.31%;
+  float: left;
+  padding: 20px 20px 70px 20px;
+  margin: 0 0 0 -10px;
+  background-color: rgba(227, 227, 227, 0.6); }
+
+.economic {
+  width: 51.39%;
+  float: left;
+  color: #fff;
+  padding: 20px 20px 30px 20px;
+  margin-left: -5px;
+  z-index: 100;
+  position: relative;
+  background-color: rgba(100, 100, 101, 0.6); }
+
+.zeela {
+  width: 52%;
+  float: left;
+  padding: 20px;
+  margin: -10px 0 0 -16px;
+  background-color: rgba(227, 227, 227, 0.6); }
+  .zeela .zeelpic {
+    width: 100%;
+    text-align: center; }
+  .zeela p {
+    padding-right: 40px; }
+
+.importport {
+  width: 27%;
+  float: left;
+  padding: 20px 20px 26px 20px; }
+
+.bioenergy {
+  width: 52%;
+  float: left;
+  margin-left: -11px;
+  padding: 25px 25px 40px 25px;
+  background: rgba(100, 100, 101, 0.6);
+  color: #fff; }
+
+.shorepower {
+  width: 52.32%;
+  float: left;
+  padding: 20px 0 10px 20px;
+  margin: -4px 0 0 -4px;
+  background: rgba(100, 100, 101, 0.6);
+  color: #fff; }
+  .shorepower .rt_pic {
+    float: right;
+    margin-left: 20px; }
